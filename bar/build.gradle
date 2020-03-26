@@ -1,0 +1,13 @@
+plugins {
+    id 'groovy'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+  compile gradleApi()
+}
+
+group = 'com.test.bar'

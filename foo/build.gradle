@@ -1,0 +1,25 @@
+ buildscript {
+   dependencies {
+    classpath name:'bar', group:'com.test.bar'
+   }
+ }
+
+plugins {
+    id 'groovy'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+  compile gradleApi()
+}
+
+group = 'com.test.foo'
+
+tasks.register("bar") {
+  doLast {
+    println bar.GreetingProvider.getGreeting()
+  }
+}

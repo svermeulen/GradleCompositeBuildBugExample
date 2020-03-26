@@ -1,0 +1,12 @@
+ buildscript {
+   dependencies {
+     classpath name:'foo', group: 'com.test.foo'
+   }
+ }
+
+repositories {
+    jcenter()
+}
+
+tasks.register("foo", foo.FooTask)
+
